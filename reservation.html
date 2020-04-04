@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Book An Event </title>  <!-- Bootstrap -->
+  <link href="assets/css/plugins/plugins.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+  <!--main css file-->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="preloader-inner"></div>
+  </div>
+  <!--/preloader-->
+
+  <!--===============main navigation + top bar==========================-->
+  <header class="header header-top-transparent" style="background-color:  rgba(255, 255, 255, 1);">
+
+    <!--main navigation-->
+    <nav class="navbar navbar-light navbar-expand-lg navbar-static-top sticky-header">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+            data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-controls="navbarNavDropdown"
+            style="color: white!important;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo3.png" width="110px" alt="logo" class="logo-default">
+            <img src="assets/images/logo3.png" width="110px" alt="logo" class="logo-scroll">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Reservation</a></li>
+            
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+    
+    
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+  </header>
+
+  <!--===============end main navigation + top bar =====================-->
+
+
+
+  <!--==============page header============-->
+  <div class="page-breadcrumb">
+    <div class="container text-center">
+      <h1>Book an Event</h1>
+    </div>
+  </div>
+  <!--==============end page header============-->
+  <div class="space-70"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 ml-auto mr-auto">
+        <div class="margin-b-40">
+          <h2 class="text-uppercase text-center">Book an Event</h2>
+        </div>
+
+        <form role="form" method="post" class="reservation-form" id="reservation-form"
+          action="http://bootstraplovers.com/bootstrap4/resto-2.3/html/assets/reservation-form/reservation.php">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group date">
+                <input type="text" class="form-control datepicker" name="r_date" placeholder="Date">
+                <div class="input-group-addon">
+                  <span class="ion-calendar"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="text" class="form-control " name="r_name" id="r_name" placeholder="Name">
+                <div class="input-group-addon">
+                  <span class="ion-person"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="text" class="form-control" name="r_email" id="r_email" placeholder="Email Id">
+                <div class="input-group-addon">
+                  <span class="ion-ios-email"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="number" class="form-control" name="r_phone_number" id="r_phone_number"
+                  placeholder="Phone Number">
+                <div class="input-group-addon">
+                  <span class="ion-android-call"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="submit" class="btn btn-xl btn-dark btn-block" name="r_submit" value="Book Now">
+          <div id="r_result"></div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="space-70"></div>
+  <footer>
+    <div class="cta-skin contact-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 margin-b-30">
+            <i class="ion-email"></i>
+            <div class="overflow-hidden">
+              <h4>Email</h4>
+              <p class="lead">
+                info@sarthacc.com
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 margin-b-30">
+            <i class="ion-ios-telephone"></i>
+            <div class="overflow-hidden">
+              <h4>Tollfree Number</h4>
+              <p class="lead">
+                1800 102 4032
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 margin-b-30">
+            <i class="ion-map"></i>
+            <div class="overflow-hidden">
+              <h4>Location</h4>
+              <p class="lead" style="font-size: .8rem; font-weight: 500;">
+                Opp Manneguda RTO Office, ORR Exit 12 Bongloor Junction,Sagar road, Ranga Reddy - 501510
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-12 text-center">
+            <ul class="list-inline f-social">
+              <li class="list-inline-item"><a href="#"><i class="ion-social-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="ion-social-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="ion-social-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="lead">
+            <p class="d-flex justify-content-center" style="font-size: .8rem; text-align: center;"> © Copyright
+              <script>document.write(new Date().getFullYear());</script>
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;BMR's Sartha-Conventions&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All Rights
+              Reserved&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Designed by Sainath Reddy
+            </p>
+          </div>
+        </div>
+      </div>
+  
+  </footer>
+
+
+  <!--back to top-->
+  <a href="#" class="scrollToTop"><i class="ion-android-arrow-up"></i></a>
+  <!--back to top end-->
+
+
+
+  <!-- jQuery plugins-->
+  <script src="assets/js/plugins/plugins.js"></script>
+  <script src="assets/js/template-custom.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap-clockpicker.min.js"></script>
+  <script src="assets/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/reservation-custom.js"></script>
+</body>
+</html>
